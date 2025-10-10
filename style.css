@@ -1,0 +1,350 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0px;
+  }
+  
+  /* HEADER */
+  header {
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .logo h1 {
+    color: #e60000;
+    font-size: 1.8rem;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav a:hover { color: #c90000; }
+  
+  .btn-red {
+    background: #c90000;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  /* HERO  */
+ 
+  .hero {
+    background: #fff6f6;
+    padding: 30px 20px;
+    margin-top: 0; 
+  }
+  
+  .hero h2 {
+    margin-top: 0; 
+    text-align: center;
+  }
+
+/* EQUIPO */
+.equipo {
+  background-color: #fff8f8;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.equipo h2 {
+  font-size: 2.2rem;
+  color: #222;
+  font-weight: 800;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.equipo h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #e60000;
+  margin: 10px auto 30px;
+  border-radius: 3px;
+}
+
+
+  /* PRODUCTOS DESTACADOS */
+  .productos-destacados {
+    padding: 40px 10px;
+  }
+  
+  .productos-destacados h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .productos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #d8edf6;
+    padding: 40px;
+    border-radius: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .producto {
+    background-color: #e6f3f9;
+    border-radius: 16px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /*SECCIONES */
+  h2, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #c90000;
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #c90000;
+    text-align: center;
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /*CARDS*/
+  .card, .card-alt, .card-form {
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card h5 {
+    margin: 5px 0;
+    color: #c90000;
+  }
+  
+  /*COLOR BLOCKS */
+  .card-alt.red { background: #ffecec; }
+  .card-alt.yellow { background: #fffbe6; }
+  .card-alt.green { background: #ebffef; }
+  
+  /*BOTONES*/
+  .btn-green {
+    background: #008c4a;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  .btn-green:hover {
+    background: #006b38;
+  }
+  
+  .btn-outline {
+    border: 2px solid #c90000;
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: #c90000;
+    text-decoration: none;
+  }
+  
+  .btn-red:hover {
+    background-color: #a80000;
+  }
+  
+  /*CONTACTO*/
+  .card-form{
+    margin: 15px;
+    padding: 10px;
+  }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    /*padding: 10px;*/
+  }
+  
+  .contacto input, .contacto textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #f8d200;
+    text-decoration: none;
+  }
+  
+  /*RESPONSIVE*/
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .header-content {
+      flex-direction: column;
+    }
+  
+    .productos {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+  /* ===== SECCIÓN EQUIPO ===== */
+.equipo {
+    background-color: #fff8f8;
+    padding: 80px 5%;
+    text-align: center;
+  }
+  
+  .equipo h2 {
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 800;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .equipo h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #e60000;
+    margin: 10px auto 30px;
+    border-radius: 3px;
+  }
+  
+  .equipo .intro {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.7;
+  }
+  
+  .equipo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .equipo-card {
+    background-color: #f4f9ff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .equipo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .equipo-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .equipo-card h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 5px;
+  }
+  
+  .equipo-card .cargo {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .equipo {
+      padding: 60px 20px;
+    }
+    .equipo-card {
+      width: 90%;
+    }
+  }
+  
