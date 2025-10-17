@@ -367,6 +367,7 @@ body {
 
   /* Icono del menú (☰) */
   .menu-icon {
+    order: 2;
     display: block;
     font-size: 1.8rem;
     color: #c90000;
