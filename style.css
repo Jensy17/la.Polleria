@@ -461,7 +461,7 @@ body {
         display: none;
     }
 
-    .menu-icon {
+    /*.menu-icon {
         order: 3;
         display: block;
         font-size: 1.5rem; 
@@ -472,7 +472,7 @@ body {
         padding: 3px 8px; 
         user-select: none;      
         margin-left: auto;
-    }
+    }*/
 
     .menu-container {
         position: absolute; 
@@ -546,5 +546,14 @@ body {
     }
 }
 
+@media (min-width: 769px) {
+  .menu-icon{
+      display: none !important;
+  }
+  
+  .menu-container {
+      display: none;
+  }
+}
 
 
