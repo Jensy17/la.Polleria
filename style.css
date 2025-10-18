@@ -111,13 +111,13 @@ body {
     margin-bottom: 20px;
     text-align: center;
   }
-  
+  /*YA NO MÁSS*/
   .productos {
     display: flex;
     justify-content: center;
     gap: 40px;
     background-color: #d8edf6;
-    padding: 40px;
+    padding: 10px;
     border-radius: 16px;
     flex-wrap: wrap;
   }
@@ -261,7 +261,6 @@ body {
   }
   
 
-  /* ===== SECCIÓN EQUIPO ===== */
 .equipo {
     background-color: #fff8f8;
     padding: 80px 5%;
